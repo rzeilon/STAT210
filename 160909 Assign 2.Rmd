@@ -1,0 +1,31 @@
+---
+title: "Second R Markdown Assignment"
+author: "Rebecca Zeilon"
+date: "September 16, 2016"
+output: html_document
+fig_caption: TRUE
+        
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, comment=NA)
+```
+```{r}
+poinsettias=read.csv("~/Downloads/Poinsettias.csv")
+pcolors=table(poinsettias$color)
+```
+```{r, results='asis'}
+library(knitr)
+kable(as.data.frame(pcolors),col.names = c("Colors", "Count"), caption="Table: 1 Poinsettia Flower Color Summary Data")
+
+```
+
+```{r}
+pcolors.prop = signif(prop.table(pcolors), digits = 3)
+```
+
+```{r fig.cap = "Fig. 1 Poinsettia flower color distribution"}
+barplot(pcolors.prop, main = "Poinsettia Flower Color Proportions", xlab = "Flower Color", ylab = "Proportion", col=c("deeppink3", "darkred", "floralwhite"), ylim = c(0,0.75))
+```
+
+  We can see that Red is the dominant color in the Poinsettia survey with a proportion of `r pcolors.prop[2]`. White,`r pcolors.prop[3]`, and Pink, `r pcolors.prop[1]` are more unusual.
