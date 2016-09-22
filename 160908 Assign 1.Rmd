@@ -1,0 +1,53 @@
+---
+title: "First R Markdown Assignment"
+author: "Rebecca Zeilon"
+date: "September 8, 2016"
+output: html_document
+---
+## Trying to save to GitHub
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, comment = "")
+```
+
+### Input a link
+[Here is my GitHub Account](https://github.com/rzeilon)
+
+
+### Create an Ordered List
+My Favorite Restaurants in Montery Bay are:
+
+  1. Cindy's Waterfront (Monterey Bay Aquarium) 
+  
+  2. The Buttery (Seabright)
+  
+  3. Bittersweet Bistro (Aptos)
+  
+  4. Cafe Cruz (Santa Cruz) 
+  
+  5. Pardise Beach Grille (Capitola) 
+  
+
+### Confident, Curious, and Confused
+  * I am **confident** in my ability to do well in this course.
+  * I am **curious** about what kinds of neat things I will learn to make my life easier, especially in regard to Rmarkdown.
+  * I am not too **confused** yet, but am concerned that my computer skills are behind those of younger classmates, so aspects of this class may be more challenging.
+  
+
+### Quotations
+>"If you aren't falling down, you aren't pushing yourself hard enough." Carl Zeilon
+
+### Write Three Paragraphs with Headings
+
+#### [Markdown Basics](http://rmarkdown.rstudio.com/lesson-8.html)
+While possibly boring to some this is my favorite part of what I have learned so far, because now I have a solid foundation to add to. I also like this website in general, as I can easily relearn things if I forget them.
+
+#### [Code Chunks](http://rmarkdown.rstudio.com/lesson-3.html)
+This area is also of interest because I can now add data I have worked on in R. I will be able to submit my STAT 250 assignments using Rmarkdown.
+
+#### [Slide Presentations](http://rmarkdown.rstudio.com/lesson-11.html)
+I believe that I may use R and Rmarkdown throughout my career.  The ability to easily convert a paper I have written in Rmarkdown into a slide presentation for an audience is intriging. Not sure how well it would work, but it woud definitely be worth trying.
+
+Excelsior!
+  
+
